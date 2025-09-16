@@ -4,10 +4,15 @@ A Smart IoT Lock System designed and developed with a keypad, RFID authenticatio
 
 🚀 Features
   🔑 Multi-factor Authentication: Unlock using a keypad or RFID card.
+  
   ☁️ Firebase Real-time Database: Synchronizes access logs and credentials instantly.
+  
   📱 Mobile App Integration: Manage and share digital keys remotely.
+  
   🛡️ Secure Remote Access: Control who can unlock the door anytime, anywhere.
+  
   📊 Real-time Monitoring: View entry logs and authentication attempts live.
+  
   📝 Lock Registration:
       Admin-only feature to register a new lock.
       Assign a custom name for each lock.
