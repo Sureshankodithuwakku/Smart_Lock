@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hand_over_key_bg"
+    tools:context=".HandOverKey">
+
+    <!-- Main layout for applying edge-to-edge insets -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/hand_over_key_card_view">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            app:cardCornerRadius="40dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#e6ffffff"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/sendKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send key"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/purple2"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:id="@+id/doorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Door name:"
+                    android:textSize="18sp"
+                    android:textColor="@color/purple4"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <!-- Searchable dropdown for Doors -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Select key"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/doorListSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@color/purple4"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User: (Receiver)"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkBlue2"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"/>
+
+                <!-- Searchable dropdown for Users -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select user"
+                    android:padding="5dp">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/userListSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@color/purple4"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set duration:"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple4"/>
+
+                <!-- Radio Buttons for durations -->
+                <RadioGroup
+                    android:id="@+id/durationRadioGroup"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp">
+
+                    <RadioButton
+                        android:id="@+id/oneHourRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40sp"
+                        android:text="One hour"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple4"/>
+
+                    <RadioButton
+                        android:id="@+id/oneDayRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="One day"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple4"/>
+
+                    <RadioButton
+                        android:id="@+id/oneWeekRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="One week"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple4"/>
+
+                    <RadioButton
+                        android:id="@+id/oneMonthRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="One month"
+                        android:textSize="16sp"
+                        android:textColor="@color/purple4"/>
+
+                </RadioGroup>
+
+                <!-- Button to hand over the key -->
+                <Button
+                    android:id="@+id/sendKeyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Send key"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Back"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/purple"
+                    android:textColor="@color/white"/>
+
+                <!-- ProgressBar for loading indicator -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

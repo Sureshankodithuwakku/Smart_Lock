@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userPageLayout"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:alpha="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userPageLayout2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="18sp"
+                android:textColor="@color/darkBlue2"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIC: "
+                android:textSize="18sp"
+                android:textColor="@color/darkBlue2"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="18sp"
+                android:textColor="@color/darkBlue2"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/userRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Role: "
+                android:textSize="18sp"
+                android:textColor="@color/darkBlue2"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/userKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doors: "
+                android:textSize="18sp"
+                android:textColor="@color/darkBlue2"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userKeysRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/sendKeyButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Send keys"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/userLogOutButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

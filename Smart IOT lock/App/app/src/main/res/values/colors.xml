@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkBlue2">#00002e</color>
+    <color name="darkBlue">#03045e</color>
+    <color name="liteBlue">#0077b6</color>
+    <color name="blue2">#0466c8</color>
+    <color name="btn_border">#A7D3E0</color>
+    <color name="btn_color">#F0F4F8</color>
+    <color name="purple">#7851B9</color>
+    <color name="purple2">#31004A</color>
+    <color name="purple3">#CCC2FF</color>
+    <color name="purple4">#0F0529</color>
+    <color name="blue3">#C6D3E3</color>
+    <color name="blue4">#08519C</color>
+    <color name="hint_text">#7B7B7B</color>
+
+</resources>

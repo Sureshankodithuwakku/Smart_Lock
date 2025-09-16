@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/admin_bg"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Welcome !"
+        android:textColor="@color/darkBlue2"
+        android:textSize="40sp"
+        android:fontFamily="@font/brlnsdbb"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="100dp"
+                android:text="Admin Dashboard\nStay in control, stay updated.."
+                android:textColor="@color/darkBlue2"
+                android:textStyle="bold"
+                android:fontFamily="@font/comic"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:gravity="center"
+            android:layout_weight="5">
+
+
+            <Button
+                android:id="@+id/DetailsButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Users Details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/btn_color"
+                android:elevation="20dp"/>
+
+
+            <Button
+                android:id="@+id/AddkeyButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Set Doors"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/btn_color"
+                android:layout_marginTop="10dp"/>
+
+
+            <Button
+                android:id="@+id/AddNewKeysButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Add Door Names"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/btn_color"
+                android:layout_marginTop="10dp"/>
+
+
+            <Button
+                android:id="@+id/logViewButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="View Log"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/btn_color"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/logOutAdminButton"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/blue2"
+                android:layout_marginTop="40dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
