@@ -15,25 +15,39 @@ A Smart IoT Lock System designed and developed with a keypad, RFID authenticatio
   
   📝 Lock Registration:
       Admin-only feature to register a new lock.
+      
       Assign a custom name for each lock.
+      
       Add new members/users to access the lock.
+      
 
 🛠️ Tech Stack
   Hardware:
+  
     ESP32 Microcontroller
+    
     RFID Reader
+    
     Keypad
+    
     Solenoid Lock
+    
   Cloud:
+  
     Firebase Realtime Database
+    
   Mobile App:
+  
     Built with Android Studio 
+    
   Programming:
+  
     C++ for ESP32 firmware
 
 ⚙️ Installation & Setup
 
   1️⃣ Hardware Setup
+  
     Connect RFID reader, keypad, and solenoid lock to ESP32.
     Flash the firmware from hardware/ using Arduino IDE or PlatformIO.
     Configure WiFi credentials and Firebase API keys in the firmware.
